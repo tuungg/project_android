@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp">
+
+    <ImageView
+        android:id="@+id/backgroundTicket"
+        android:layout_width="match_parent"
+        android:layout_height="139dp"
+        android:src="@drawable/background_ticket"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/judulTiketFilm"
+        android:layout_width="211dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="judul"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/backgroundTicket"
+        app:layout_constraintTop_toTopOf="@+id/backgroundTicket" />
+
+    <TextView
+        android:id="@+id/placeHoldertanggalTiketFilm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Tanggal:"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/judulTiketFilm"
+        app:layout_constraintTop_toBottomOf="@+id/judulTiketFilm" />
+
+    <TextView
+        android:id="@+id/tanggalTiket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="xx-mon-yyyy"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/placeHoldertanggalTiketFilm"
+        app:layout_constraintTop_toBottomOf="@+id/placeHoldertanggalTiketFilm" />
+
+
+    <TextView
+        android:id="@+id/genre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:text="genre"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/judulTiketFilm" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="3dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="16dp"
+        android:background="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/tanggalTiket"
+        app:layout_constraintStart_toEndOf="@+id/tanggalTiket"
+        app:layout_constraintTop_toTopOf="@+id/placeHoldertanggalTiketFilm" />
+
+    <TextView
+        android:id="@+id/tempatPlaceholderBioskop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="Bioskop"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/view"
+        app:layout_constraintTop_toTopOf="@+id/placeHoldertanggalTiketFilm" />
+
+
+    <TextView
+        android:id="@+id/tempatBioskop"
+        android:layout_width="126dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="8dp"
+        android:text="nama bisokop"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/tempatPlaceholderBioskop"
+        app:layout_constraintTop_toBottomOf="@+id/tempatPlaceholderBioskop" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="3dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="16dp"
+        android:background="#000000"
+        app:layout_constraintStart_toEndOf="@+id/tempatBioskop"
+        app:layout_constraintTop_toTopOf="@+id/view" />
+
+    <TextView
+        android:id="@+id/placeHolderJamTiketFilm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="Jam:"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/view2"
+        app:layout_constraintTop_toTopOf="@+id/tempatPlaceholderBioskop" />
+
+    <TextView
+        android:id="@+id/jamTiket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="xx:xx"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/placeHolderJamTiketFilm"
+        app:layout_constraintTop_toBottomOf="@+id/placeHolderJamTiketFilm" />
+
+    <ImageView
+        android:id="@+id/badanFilm"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/badan_film"
+        tools:layout_editor_absoluteX="2dp"
+        tools:layout_editor_absoluteY="154dp"
+        app:layout_constraintStart_toStartOf="@id/backgroundTicket"
+        app:layout_constraintTop_toBottomOf="@id/tempatBioskop" />
+
+    <TextView
+        android:id="@+id/placeHolderSeat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:text="Seat:"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/badanFilm"
+        app:layout_constraintTop_toBottomOf="@+id/backgroundTicket" />
+
+    <TextView
+        android:id="@+id/seat"
+        android:layout_width="119dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="48dp"
+        android:text="A1,A2,A3"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/placeHolderSeat"
+        app:layout_constraintTop_toTopOf="@+id/placeHolderSeat" />
+
+    <TextView
+        android:id="@+id/placeHolderLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Location:"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/placeHolderSeat"
+        app:layout_constraintTop_toBottomOf="@+id/placeHolderSeat" />
+
+    <TextView
+        android:id="@+id/location"
+        android:layout_width="159dp"
+        android:layout_height="70dp"
+        android:text="jln. Gubeng"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/seat"
+        app:layout_constraintTop_toTopOf="@+id/placeHolderLocation" />
+
+    <ImageView
+        android:id="@+id/qrCode"
+        android:layout_width="82dp"
+        android:layout_height="88dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/rounded_background"
+        app:layout_constraintStart_toEndOf="@+id/location"
+        app:layout_constraintTop_toTopOf="@+id/badanFilm" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

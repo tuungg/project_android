@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".pilihKursi">
+
+    <!-- Layar -->
+    <ImageView
+        android:id="@+id/backgroundLayar"
+        android:layout_width="399dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/rounded_background_gr"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/tvLayar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Layar"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="@id/backgroundLayar"
+        app:layout_constraintBottom_toBottomOf="@id/backgroundLayar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Row A (Centered 4 Seats) -->
+    <ImageView
+        android:id="@+id/A1"
+        android:layout_width="50dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/chair"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/backgroundLayar" />
+
+    <ImageView
+        android:id="@+id/A2"
+        android:layout_width="50dp"
+        android:layout_height="55dp"
+        android:src="@drawable/chair"
+        app:layout_constraintTop_toTopOf="@id/A1"
+        app:layout_constraintStart_toEndOf="@id/A1"
+        android:layout_marginStart="10dp" />
+
+    <ImageView
+        android:id="@+id/A3"
+        android:layout_width="50dp"
+        android:layout_height="55dp"
+        android:src="@drawable/chair"
+        app:layout_constraintTop_toTopOf="@id/A1"
+        app:layout_constraintStart_toEndOf="@id/A2"
+        android:layout_marginStart="10dp" />
+
+    <ImageView
+        android:id="@+id/A4"
+        android:layout_width="50dp"
+        android:layout_height="55dp"
+        android:src="@drawable/chair"
+        app:layout_constraintTop_toTopOf="@id/A1"
+        app:layout_constraintStart_toEndOf="@id/A3"
+        android:layout_marginStart="10dp" />
+
+    <!-- Row B (Centered 4 Seats) -->
+    <ImageView
+        android:id="@+id/B1"
+        android:layout_width="50dp"
+        android:layout_height="55dp"
+        android:src="@drawable/chair"
+        app:layout_constraintTop_toBottomOf="@id/A1"
+        app:layout_constraintStart_toStartOf="@id/A1"
+        android:layout_marginTop="20dp" />
+
+    <ImageView
+        android:id="@+id/B2"
+        android:layout_width="50dp"
+        android:layout_height="55dp"
+        android:src="@drawable/chair"
+        app:layout_constraintTop_toTopOf="@id/B1"
+        app:layout_constraintStart_toEndOf="@id/B1"
+        android:layout_marginStart="10dp" />
+
+    <ImageView
+        android:id="@+id/B3"
+        android:layout_width="50dp"
+        android:layout_height="55dp"
+        android:src="@drawable/chair"
+        app:layout_constraintTop_toTopOf="@id/B1"
+        app:layout_constraintStart_toEndOf="@id/B2"
+        android:layout_marginStart="10dp" />
+
+    <ImageView
+        android:id="@+id/B4"
+        android:layout_width="50dp"
+        android:layout_height="55dp"
+        android:src="@drawable/chair"
+        app:layout_constraintTop_toTopOf="@id/B1"
+        app:layout_constraintStart_toEndOf="@id/B3"
+        android:layout_marginStart="10dp" />
+
+    <!-- Row C (Centered 4 Seats) -->
+    <ImageView
+        android:id="@+id/C1"
+        android:layout_width="50dp"
+        android:layout_height="55dp"
+        android:src="@drawable/chair"
+        app:layout_constraintTop_toBottomOf="@id/B1"
+        app:layout_constraintStart_toStartOf="@id/B1"
+        android:layout_marginTop="20dp" />
+
+    <ImageView
+        android:id="@+id/C2"
+        android:layout_width="50dp"
+        android:layout_height="55dp"
+        android:src="@drawable/chair"
+        app:layout_constraintTop_toTopOf="@id/C1"
+        app:layout_constraintStart_toEndOf="@id/C1"
+        android:layout_marginStart="10dp" />
+
+    <ImageView
+        android:id="@+id/C3"
+        android:layout_width="50dp"
+        android:layout_height="55dp"
+        android:src="@drawable/chair"
+        app:layout_constraintTop_toTopOf="@id/C1"
+        app:layout_constraintStart_toEndOf="@id/C2"
+        android:layout_marginStart="10dp" />
+
+    <ImageView
+        android:id="@+id/C4"
+        android:layout_width="50dp"
+        android:layout_height="55dp"
+        android:src="@drawable/chair"
+        app:layout_constraintTop_toTopOf="@id/C1"
+        app:layout_constraintStart_toEndOf="@id/C3"
+        android:layout_marginStart="10dp" />
+
+    <!-- Row D, Left Side (3 Seats) -->
+    <ImageView
+        android:id="@+id/D1"
+        android:layout_width="50dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/chair"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/C1" />
+
+    <ImageView
+        android:id="@+id/D2"
+        android:layout_width="50dp"
+        android:layout_height="55dp"
+        android:src="@drawable/chair"
+        app:layout_constraintTop_toTopOf="@id/D1"
+        app:layout_constraintStart_toEndOf="@id/D1"
+        android:layout_marginStart="10dp" />
+
+    <ImageView
+        android:id="@+id/D3"
+        android:layout_width="50dp"
+        android:layout_height="55dp"
+        android:src="@drawable/chair"
+        app:layout_constraintTop_toTopOf="@id/D1"
+        app:layout_constraintStart_toEndOf="@id/D2"
+        android:layout_marginStart="10dp" />
+
+    <!-- Row D, Right Side (3 Seats) -->
+    <ImageView
+        android:id="@+id/D4"
+        android:layout_width="50dp"
+        android:layout_height="55dp"
+        android:src="@drawable/chair"
+        app:layout_constraintTop_toTopOf="@id/D1"
+        app:layout_constraintEnd_toStartOf="@id/D5"
+        android:layout_marginEnd="10dp" />
+
+    <ImageView
+        android:id="@+id/D5"
+        android:layout_width="50dp"
+        android:layout_height="55dp"
+        android:src="@drawable/chair"
+        app:layout_constraintTop_toTopOf="@id/D1"
+        app:layout_constraintEnd_toStartOf="@id/D6"
+        android:layout_marginEnd="10dp" />
+
+    <ImageView
+        android:id="@+id/D6"
+        android:layout_width="50dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/chair"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/D1" />
+
+    <!-- Row E, Left Side (3 Seats) -->
+    <ImageView
+        android:id="@+id/E1"
+        android:layout_width="50dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/chair"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/D1" />
+
+    <ImageView
+        android:id="@+id/E2"
+        android:layout_width="50dp"
+        android:layout_height="55dp"
+        android:src="@drawable/chair"
+        app:layout_constraintTop_toTopOf="@id/E1"
+        app:layout_constraintStart_toEndOf="@id/E1"
+        android:layout_marginStart="10dp" />
+
+    <ImageView
+        android:id="@+id/E3"
+        android:layout_width="50dp"
+        android:layout_height="55dp"
+        android:src="@drawable/chair"
+        app:layout_constraintTop_toTopOf="@id/E1"
+        app:layout_constraintStart_toEndOf="@id/E2"
+        android:layout_marginStart="10dp" />
+
+    <!-- Row E, Right Side (3 Seats) -->
+    <ImageView
+        android:id="@+id/E4"
+        android:layout_width="50dp"
+        android:layout_height="55dp"
+        android:src="@drawable/chair"
+        app:layout_constraintTop_toTopOf="@id/E1"
+        app:layout_constraintEnd_toStartOf="@id/E5"
+        android:layout_marginEnd="10dp" />
+
+    <ImageView
+        android:id="@+id/E5"
+        android:layout_width="50dp"
+        android:layout_height="55dp"
+        android:src="@drawable/chair"
+        app:layout_constraintTop_toTopOf="@id/E1"
+        app:layout_constraintEnd_toStartOf="@id/E6"
+        android:layout_marginEnd="10dp" />
+
+    <ImageView
+        android:id="@+id/E6"
+        android:layout_width="50dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/chair"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/E1" />
+
+    <!-- Row F, Left Side (3 Seats) -->
+    <ImageView
+        android:id="@+id/F1"
+        android:layout_width="50dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/chair"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/E1" />
+
+    <ImageView
+        android:id="@+id/F2"
+        android:layout_width="50dp"
+        android:layout_height="55dp"
+        android:src="@drawable/chair"
+        app:layout_constraintTop_toTopOf="@id/F1"
+        app:layout_constraintStart_toEndOf="@id/F1"
+        android:layout_marginStart="10dp" />
+
+    <ImageView
+        android:id="@+id/F3"
+        android:layout_width="50dp"
+        android:layout_height="55dp"
+        android:src="@drawable/chair"
+        app:layout_constraintTop_toTopOf="@id/F1"
+        app:layout_constraintStart_toEndOf="@id/F2"
+        android:layout_marginStart="10dp" />
+
+    <!-- Row F, Right Side (3 Seats) -->
+    <ImageView
+        android:id="@+id/F4"
+        android:layout_width="50dp"
+        android:layout_height="55dp"
+        android:src="@drawable/chair"
+        app:layout_constraintTop_toTopOf="@id/F1"
+        app:layout_constraintEnd_toStartOf="@id/F5"
+        android:layout_marginEnd="10dp" />
+
+    <ImageView
+        android:id="@+id/F5"
+        android:layout_width="50dp"
+        android:layout_height="55dp"
+        android:src="@drawable/chair"
+        app:layout_constraintTop_toTopOf="@id/F1"
+        app:layout_constraintEnd_toStartOf="@id/F6"
+        android:layout_marginEnd="10dp" />
+
+    <ImageView
+        android:id="@+id/F6"
+        android:layout_width="50dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/chair"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/F1" />
+
+    <Button
+        android:id="@+id/pesenTiket"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Pesan Tiket"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:backgroundTint="#ffc801"
+        android:layout_margin="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
